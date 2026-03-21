@@ -47,9 +47,7 @@
   Email: sathiskumark192@gmail.com | Phone: +91-7358813273
 </div>
 
-<p>
-Date: 20 March 2026
-</p>
+<p id='date'></p>
 
 <p>
 Hiring Manager<br>
@@ -61,7 +59,7 @@ Dear Hiring Manager,
 </p>
 
 <p>
-I am writing to apply for the Automation Tester position. With 4 years of
+I am writing to apply for the Software Test Automation Engineer position. With 4 years of
 hands-on experience in test automation, API testing, and end-to-end validation across telecom and enterprise
 systems, I bring a strong quality engineering mindset combined with practical automation expertise.
 </p>
@@ -95,6 +93,16 @@ needs. Thank you for your time and consideration.
 Sincerely,<br>
 Satish Kumar
 </p>
+<script>
+  const today = new Date();
 
+  const formattedDate = today.toLocaleDateString('en-IN', {
+    day: '2-digit',
+    month: 'long',
+    year: 'numeric'
+  });
+
+  document.getElementById("date").textContent = "Date: " + formattedDate;
+</script>
 </body>
 </html>
