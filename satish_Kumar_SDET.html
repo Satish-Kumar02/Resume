@@ -7,8 +7,8 @@
   <style>
   body {
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.25;
-    margin: 14px;
+    line-height: 1.15;
+    margin: 13px;
     font-size: 11.5px;
     color: #222;
   }
@@ -19,14 +19,14 @@
   }
 
   h2 {
-    margin: 10px 0 3px 0;
-    font-size: 15px;
+    margin: 7px 0 2px 0;
+    font-size: 14.5px;
     border-bottom: 1px solid #999;
     padding-bottom: 1px;
   }
 
   h3 {
-    margin: 6px 0 2px 0;
+    margin: 4px 0 1px 0;
     font-size: 12.5px;
   }
 
@@ -40,7 +40,7 @@
   }
 
   li {
-    margin-bottom: 2px;
+    margin-bottom: 1px;
   }
 
   .contact {
@@ -48,9 +48,15 @@
   }
 
   @media print {
-    @page {
-      size: A4;
-      margin: 12mm;
+    a, a[style] {
+      pointer-events: none !important;
+      color: #222 !important;
+      text-decoration: none !important;
+    }
+    
+    a::after, a[style]::after {
+      content: "" !important;
+      display: none !important;
     }
   }
 </style>
@@ -60,13 +66,13 @@
   <h1>Satish Kumar</h1>
   <div class="contact">
     Chennai, Tamil Nadu<br>
-    Email: <a class ="nav-link" href="sathiskumark192@gmail.com">sathiskumark192@gmail.com</a> | Phone: +91-7358813273<br>
-    LinkedIn: <a class = "nav-link" href="https://www.linkedin.com/in/sathish-kumar1902/">linkedin.com/in/sathish-kumar1902/</a>| GitHub:<a class ="nav-link" href="https://github.com/Satish-Kumar02">github.com/Satish-Kumar02</a>
+    Email: <span class ="nav-link" style="text-decoration:none;color:#222;">sathiskumark192@gmail.com</span> | Phone: +91-7358813273<br>
+    LinkedIn: <span class = "nav-link" style="text-decoration:none;color:#222;">linkedin.com/in/sathish-kumar1902/</span> | GitHub:<span class ="nav-link" style="text-decoration:none;color:#222;"> github.com/Satish-Kumar02</span>
   </div>
 
   <h2>Professional Summary</h2>
-  <p>SDET with 4+ years of experience in Python-based test automation, Selenium UI automation, and API testing (REST/SOAP). Strong expertise in Pytest framework, BDD (Behave/Cucumber), and microservices validation. Designed and enhanced scalable automated test solutions improving regression efficiency and reducing defect leakage. Hands-on with Postman, SOAP UI, SQL, and log analysis tools like Splunk and Kibana. Exposure to Docker, Kubernetes, and AWS S3.Experienced in test strategy, test planning, and end-to-end validation across UI and API layers.</p>
-  <h2><strong>Core stack:</strong>Python, Selenium WebDriver, Pytest, API Automation (REST/SOAP), BDD (Cucumber/Behave), Microservices</h2>
+  <p>SDET with 4+ years of experience in Python-based test automation, Selenium UI automation, and API testing (REST/SOAP). Strong expertise in Pytest framework, BDD (Behave/Cucumber), and microservices validation. Designed and enhanced scalable automated test solutions improving regression efficiency and reducing defect leakage. Hands-on with Postman, SOAP UI, SQL, and log analysis tools like Splunk and Kibana. Exposure to Docker, Kubernetes, and AWS S3. Experienced in test strategy, test planning, and end-to-end validation across UI and API layers.</p>
+  <h2>Core Stack:</h2><P>Python, Selenium WebDriver, Pytest, API Automation (REST/SOAP), BDD (Cucumber/Behave), Microservices</P>
   <h2>Technical Skills</h2>
   <ul>
     <li><strong>Automation:</strong> Python</li>
@@ -100,6 +106,7 @@
   <p><strong>Infosys</strong> | March 2022 – July 2025</p>
   <ul>
     <li>Conducted end-to-end testing of web applications for functionality, accuracy, and quality.</li>
+    <li>Designed and executed 2700+ test cases across UI, API, and IVR workflows, leveraging them to identify high-value scenarios for automation and improve regression efficiency.</li>
     <li>Performed IVR call flow testing, routing logic validation, and business rule verification.</li>
     <li>Built UI regression automation using Python Selenium and Pytest and behave(BDD/cucumber) to ensure stable CI test execution.</li>
     <li>Developed IVR automation scripts using Cyara for faster validation.</li>
